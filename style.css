@@ -1,6 +1,6 @@
 * {
-  margin: 3px;
-  padding: 2px;
+  margin: 0px;
+  padding: 0px;
 }
 body {
   background-image: url("background\ \(2\).jpg");
@@ -13,7 +13,7 @@ body {
 }
 .logo img {
   width: 100px;
-  margin-right: 550px;
+  margin-right: 650px;
 }
 .navbar ul {
   display: flex;
@@ -30,10 +30,10 @@ a {
 }
 a:hover {
   border: 1px solid rgb(253, 253, 253);
-  color: #ffcc00;
+  color: #497320;
 }
 .logo :hover {
-  border: 1px solid rgb(253, 253, 4);
+  border: 1px solid #497320;
 }
 /* footer */
 
@@ -65,13 +65,13 @@ footer {
 
 .social-links a {
   margin: 0 15px;
-  color: #61dafb;
+  color: #497320;
   font-size: 24px;
 }
 
 .social-links a:hover {
   cursor: pointer;
-  color: #ffcc00;
+  color: rgb(173, 231, 141);
 }
 footer .logo {
   width: 2px;
@@ -81,4 +81,105 @@ footer .logo {
   display: flex;
   justify-content: start;
   height: 800px;
+}
+.bg-form {
+  width: 300px;
+  background-image: url("background\ \(2\).jpg");
+  color: #fff;
+  margin: auto;
+  border: 4px solid white;
+  border-radius: 7px;
+  display: none;
+  margin-bottom: 30px;
+}
+.ajout-de-footboleur {
+  font-family: "Roboto Slab";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1px;
+  margin: 10px;
+}
+.cadre {
+  border: 3px solid white;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+
+.button {
+  font-family: "Roboto Slab";
+  background-color: rgb(226, 251, 226);
+  width: 70px;
+  height: 30px;
+  border: 3px;
+  border-radius: 7px;
+  margin-inline-start: 220px;
+  margin-bottom: 13px;
+}
+.button:hover {
+  background-color: rgb(173, 231, 141);
+  color: white;
+  cursor: progress;
+}
+
+.ab {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.add-i {
+  background-color: rgb(163, 255, 127);
+  color: black;
+  border: 3px;
+  border-radius: 7px;
+  width: 50px;
+  height: 30px;
+  margin-inline-end: 14px;
+}
+.add-i:hover {
+  background-color: #89a170;
+  color: white;
+  cursor: progress;
+}
+.bg-add-player {
+  background-image: url("bg-form.jpg");
+  font-family: "Roboto Slab";
+  border: 4px solid white;
+  border-radius: 7px;
+  width: 350px;
+  height: fit-content;
+}
+h3 {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.ajout-player {
+  display: flex;
+  margin-inline-start: 70px;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.terrain-foot {
+  display: flex;
+  justify-content: space-around;
+}
+.select {
+  margin-inline-start: 145px;
+  background-color: rgb(163, 255, 127);
+  border: 4px solid rgb(163, 255, 127);
+  border-radius: 7px;
+  margin-bottom: 10px;
+  width: 70px;
+}
+
+video {
+  width: 100%;
+  margin-bottom: 50px;
 }

@@ -31,7 +31,83 @@
       </ul>
     </nav>
     <!--terrain-->
-    <div class="terrain"><img src="terrain de foot .jpg" alt="terrain" /></div>
+    <video autoplay loop muted>
+      <source src="introfut.mp4" />
+    </video>
+    <div class="terrain-foot">
+      <div class="terrain">
+        <img src="terrain de foot .jpg" alt="terrain" />
+      </div>
+      <div class="bg-add-player">
+        <form class="add-player">
+          <div class="formation">
+            <h3>Formation</h3>
+            <select class="select" name="choix" id="choix">
+              <option value="3-4-3">3-4-3</option>
+              <option value="4-3-3">4-3-3</option>
+              <option value="4-2-4">4-2-4</option>
+            </select>
+          </div>
+          <div class="ajout-player">
+            <h3>Ajouter un joueur</h3>
+            <button class="add-i">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+        </form>
+        <div class="bg-form">
+          <form class="ajout-de-footboleur">
+            <label class="ab" for="Name">Name:</label>
+            <input class="cadre" type="text" />
+
+            <label class="ab" for="img">Photo:</label>
+            <input class="cadre" type="url" />
+
+            <label class="ab" for="position">Position:</label>
+            <input class="cadre" type="text" />
+
+            <label class="ab" for="Nationality">Nationality:</label>
+            <input class="cadre" type="text" />
+
+            <label class="ab" for="flag">Flag:</label>
+            <input class="cadre" type="url" />
+
+            <label class="ab" for="club">Club:</label>
+            <input class="cadre" type="url" />
+
+            <label class="ab" for="logo">Logo:</label>
+            <input class="cadre" type="url" />
+
+            <label class="ab" for="rating">Rating:</label>
+            <input class="cadre" type="number" />
+
+            <label class="ab" for="pace">Pace:</label>
+            <input class="cadre" type="number" />
+
+            <label class="ab" for="shooting">Shooting:</label>
+            <input class="cadre" type="number" />
+
+            <label class="ab" for="passing">Passing:</label>
+            <input class="cadre" type="number" />
+
+            <label class="ab" for="dribbling">Dribbling:</label>
+            <input class="cadre" type="number" />
+
+            <label class="ab" for="defending">Defending:</label>
+            <input class="cadre" type="number" />
+
+            <label class="ab" for="physical">Physical:</label>
+            <input class="cadre" type="number" />
+          </form>
+          <input class="button" type="submit" value="Add" />
+        </div>
+      </div>
+    </div>
+    <!-- boutton -->
+
+    <!-- formulaire -->
+
+    <!-- formulaire ajouter un joueur -->
 
     <!-- footer -->
     <footer>
@@ -66,5 +142,7 @@
         </p>
       </div>
     </footer>
+    <!--  -->
+    <script src="script.js"></script>
   </body>
 </html>
