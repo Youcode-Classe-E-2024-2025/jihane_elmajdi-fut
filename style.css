@@ -80,7 +80,7 @@ footer .logo {
 .terrain {
   display: flex;
   justify-content: start;
-  height: 809px;
+  height: 880px;
   width: 54%;
   background-image: url("media/terrain de foot .jpg");
   background-size: cover;
@@ -287,8 +287,8 @@ video {
   top: 70px;
   left: 285px;
 }
-
-/* .j1 {
+/* 
+.j1 {
   height: 50px;
   width: 40px;
   background-color: #fff;
