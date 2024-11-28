@@ -3,7 +3,7 @@
   padding: 0px;
 }
 body {
-  background-image: url("background\ \(2\).jpg");
+  background-image: url("media/background\ \(2\).jpg");
   background-size: cover;
   background-position: center;
 }
@@ -80,11 +80,16 @@ footer .logo {
 .terrain {
   display: flex;
   justify-content: start;
-  height: 800px;
+  height: 809px;
+  width: 54%;
+  background-image: url("media/terrain de foot .jpg");
+  background-size: cover;
+  position: relative;
 }
+
 .bg-form {
   width: 300px;
-  background-image: url("background\ \(2\).jpg");
+  background-image: url("media/background\ \(2\).jpg");
   color: #fff;
   margin: auto;
   border: 4px solid white;
@@ -143,7 +148,7 @@ footer .logo {
   cursor: progress;
 }
 .bg-add-player {
-  background-image: url("bg-form.jpg");
+  background-image: url("media/bg-form.jpg");
   font-family: "Roboto Slab";
   border: 4px solid white;
   border-radius: 7px;
@@ -183,3 +188,213 @@ video {
   width: 100%;
   margin-bottom: 50px;
 }
+.j1 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  top: 180px;
+  left: 285px;
+}
+.j2 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 145px;
+  left: 430px;
+  position: absolute;
+}
+.j3 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 145px;
+  right: 430px;
+  position: absolute;
+}
+.j4 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 500px;
+  left: 285px;
+  position: absolute;
+}
+.j5 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 500px;
+  left: 110px;
+  position: absolute;
+}
+.j6 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 500px;
+  left: 455px;
+  position: absolute;
+}
+.j7 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 410px;
+  left: 288px;
+  position: absolute;
+}
+.j8 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 350px;
+  left: 388px;
+  position: absolute;
+}
+.j9 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 350px;
+  left: 190px;
+  position: absolute;
+}
+.j10 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 250px;
+  left: 288px;
+  position: absolute;
+}
+.j11 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  top: 70px;
+  left: 285px;
+}
+
+/* .j1 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 617px;
+  left: 340px;
+  background-color: chartreuse;
+}
+.j2 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 145px;
+  left: 480px;
+  position: absolute;
+  background-color: darkblue;
+}
+.j3 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 145px;
+  right: 480px;
+  position: absolute;
+  background-color: red;
+}
+.j4 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 500px;
+  left: 285px;
+  position: absolute;
+  background-color: darkgoldenrod;
+}
+.j5 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 500px;
+  left: 110px;
+  position: absolute;
+  background-color: darkmagenta;
+}
+.j6 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 500px;
+  left: 455px;
+  position: absolute;
+  background-color: blueviolet;
+}
+.j7 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 620px;
+  left: 230px;
+  position: absolute;
+  background-color: aqua;
+}
+.j8 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 350px;
+  left: 430px;
+  position: absolute;
+  background-color: cadetblue;
+}
+.j9 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 350px;
+  left: 140px;
+  position: absolute;
+  background-color: chartreuse;
+}
+.j10 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 250px;
+  left: 288px;
+  position: absolute;
+  background-color: dodgerblue;
+}
+.j11 {
+  height: 50px;
+  width: 40px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  top: 70px;
+  left: 285px;
+  background-color: rgb(227, 250, 98);
+} */
