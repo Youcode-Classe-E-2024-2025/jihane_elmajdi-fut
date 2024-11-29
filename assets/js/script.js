@@ -40,7 +40,7 @@ function afficheData() {
   });
 }
 
-//les deux formation
+//les deux formation//
 const formation = {
   "3-4-3": [
     { bottom: "180px", left: "285px" },
