@@ -1,11 +1,45 @@
+import { data } from "./data.js";
+
+let dataPlayer = JSON.parse(localStorage.getItem("dataPlayer")) || data.players;
+localStorage.setItem("dataPlayer", JSON.stringify(dataPlayer));
+
+console.log(JSON.parse(localStorage.getItem("dataPlayer")));
 // Sélectionner le bouton et le formulaire
 let bouton = document.querySelector(".add-i");
 let formulaire = document.querySelector(".bg-form");
 // Ajouter un événement au clic sur le bouton
 bouton.addEventListener("click", function (e) {
   e.preventDefault();
-  formulaire.style = "display: block";
+  formulaire.classList.toggle("visible");
+  // formulaire.style = "display: block";
 });
+
+let cartsTerrain = document.querySelectorAll(".cart-dans-terrain");
+cartsTerrain.forEach(function (cart) {
+  cart.addEventListener("click", afficheData);
+});
+
+function afficheData() {
+  const container = document.querySelector(".rectangle");
+  container.innerHTML = "";
+
+  if (container.style.display === "none") {
+    container.style.display = "flex";
+  } else {
+    container.style.display = "none";
+  }
+
+  dataPlayer.forEach((player) => {
+    const image = document.createElement("div");
+    image.innerHTML = `
+    <div class="image">
+      <img src="${player.photo}" alt="${player.name}" />
+    </div>
+  `;
+    container.appendChild(image);
+  });
+}
+
 //les deux formation
 const formation = {
   "3-4-3": [

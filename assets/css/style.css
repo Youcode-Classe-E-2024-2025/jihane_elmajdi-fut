@@ -65,7 +65,7 @@ footer .logo {
   display: flex;
   justify-content: start;
   height: 880px;
-  width: 54%;
+  width: 600px;
   background-image: url("../media/terrain\ de\ foot\ .jpg");
   background-size: cover;
   position: relative;
@@ -136,7 +136,7 @@ footer .logo {
   font-family: "Roboto Slab";
   border: 4px solid white;
   border-radius: 7px;
-  width: 350px;
+  width: 100%;
   height: fit-content;
 }
 h3 {
@@ -464,7 +464,7 @@ footer {
   justify-content: center;
   align-items: center;
   height: 880px;
-  width: 54%;
+  min-width: 50%;
   background-image: url("../media/terrain\ de\ foot\ .jpg");
   background-size: cover;
   position: relative;
@@ -576,6 +576,7 @@ video {
 .terrain-foot {
   display: flex;
   justify-content: space-around;
+  gap: 65px;
 }
 
 .j1,
@@ -595,321 +596,60 @@ video {
   border-radius: 50%;
   position: absolute;
 }
-
-/* Media Queries */
-
-@media (max-width: 768px) {
-  .navbar ul {
-    flex-direction: column; /* Les éléments de la navbar se superposent sur petits écrans */
-    gap: 10px;
-  }
-
-  .logo img {
-    width: 80px; /* Logo plus petit */
-    margin-right: 0;
-  }
-
-  .terrain {
-    width: 90%; /* Réduit la taille du terrain */
-    height: 600px;
-  }
-
-  .bg-form,
-  .bg-add-player {
-    width: 100%; /* Formulaire plus large pour les petits écrans */
-  }
-
-  .button {
-    margin-inline-start: 90px; /* Centrer le bouton */
-  }
-
-  .select {
-    margin-inline-start: 50px; /* Réduit l'espace pour la sélection */
-  }
-
-  .ajout-player {
-    flex-direction: column; /* Empile les éléments */
-    margin-inline-start: 0;
-    margin-bottom: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .navbar ul {
-    gap: 5px;
-  }
-
-  .logo img {
-    width: 70px;
-  }
-
-  .terrain {
-    width: 100%;
-    height: 400px;
-  }
-
-  .bg-form,
-  .bg-add-player {
-    width: 100%; /* Prend toute la largeur de l'écran */
-  }
-
-  .select {
-    width: 60%; /* Rendre la sélection plus grande */
-    margin-inline-start: 20px;
-  }
-
-  .button {
-    margin-inline-start: 70px;
-    width: 100px;
-    height: 40px;
-  }
-
-  video {
-    margin-bottom: 30px;
-  }
-
-  .social-links {
-    flex-direction: column; /* Réorganise les icônes sociales */
-  }
-}
-
-@media (max-width: 320px) {
-  .navbar ul {
-    font-size: 14px; /* Réduit la taille du texte */
-  }
-
-  .logo img {
-    width: 60px; /* Logo plus petit */
-  }
-
-  .terrain {
-    height: 350px;
-  }
-
-  .bg-add-player {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .ajout-de-footboleur {
-    gap: 5px; /* Réduit les espaces entre les champs */
-  }
-
-  .button {
-    width: 90%;
-    margin-inline-start: 5%;
-  }
-}
-/* Media queries pour l'écran du téléphone */
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-body {
-  background-image: url("../media/background\ \(2\).jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Ajouté pour une meilleure répartition */
-}
-
-.logo img {
-  width: 100px;
-  margin-right: 0;
-}
-
-.navbar ul {
-  display: flex;
-  list-style: none;
-  gap: 20px; /* Réduit l'espacement sur les petits écrans */
-}
-
-a {
-  font-family: "Roboto Slab";
-  text-decoration: none;
-  font-size: 17px;
-  color: white;
-}
-
-a:hover {
-  border: 1px solid rgb(253, 253, 253);
-  color: #497320;
-}
-
-footer {
-  background-color: transparent;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  margin-top: 60px;
-  border-radius: 8px;
-  border: 3px solid white;
-  position: relative;
-}
-
-.footer h2 {
-  font-family: "Roboto Slab";
-  font-size: 26px;
-  letter-spacing: 2px;
-}
-
-.footer p {
-  margin: 10px;
-}
-
-.social-links {
-  margin: 20px;
-}
-
-.social-links a {
-  margin: 0 15px;
-  color: #497320;
-  font-size: 24px;
-}
-
-.social-links a:hover {
+.j1:hover {
   cursor: pointer;
-  color: rgb(173, 231, 141);
+  background-color: aqua;
 }
-
-.terrain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 880px;
-  width: 54%;
-  background-image: url("../media/terrain\ de\ foot\ .jpg");
-  background-size: cover;
-  position: relative;
+.j2:hover {
+  cursor: pointer;
+  background-color: aqua;
 }
-
-.bg-form {
-  width: 300px;
-  background-image: url("../media/background\ \(2\).jpg");
-  color: #fff;
-  margin: auto;
-  border: 4px solid white;
-  border-radius: 7px;
-  display: none;
-  margin-bottom: 30px;
+.j3:hover {
+  cursor: pointer;
+  background-color: aqua;
 }
-
-.ajout-de-footboleur {
-  font-family: "Roboto Slab";
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.j4:hover {
+  cursor: pointer;
+  background-color: aqua;
+}
+.j5:hover {
+  cursor: pointer;
+  background-color: aqua;
+}
+.j6:hover {
+  cursor: pointer;
+  background-color: aqua;
+}
+.j7:hover {
+  cursor: pointer;
+  background-color: aqua;
+}
+.j8:hover {
+  cursor: pointer;
+  background-color: aqua;
+}
+.j9:hover {
+  cursor: pointer;
+  background-color: aqua;
+}
+.j10:hover {
+  cursor: pointer;
+  background-color: aqua;
+}
+.j11:hover {
+  cursor: pointer;
+  background-color: aqua;
+}
+.rectangle {
   flex-wrap: wrap;
-  gap: 1px;
-  margin: 10px;
-}
-
-.cadre {
-  border: 3px solid white;
-  border-radius: 7px;
-  margin-bottom: 10px;
-}
-
-.button {
-  font-family: "Roboto Slab";
-  background-color: rgb(226, 251, 226);
-  width: 70px;
-  height: 30px;
-  border: 3px;
-  border-radius: 7px;
-  margin-inline-start: 220px;
-  margin-bottom: 13px;
-}
-
-.button:hover {
-  background-color: rgb(173, 231, 141);
-  color: white;
-  cursor: progress;
-}
-
-.ab {
-  display: flex;
+  margin-right: 120px;
+  margin-top: 20px;
+  display: none;
   justify-content: center;
-  margin-bottom: 10px;
 }
-
-.add-i {
-  background-color: rgb(163, 255, 127);
-  color: black;
-  border: 3px;
-  border-radius: 7px;
+.image img {
   width: 50px;
-  height: 30px;
-  margin-inline-end: 14px;
 }
-
-.add-i:hover {
-  background-color: #89a170;
-  color: white;
-  cursor: progress;
-}
-
-.bg-add-player {
-  background-image: url("../media/bg-form.jpg");
-  font-family: "Roboto Slab";
-  border: 4px solid white;
-  border-radius: 7px;
-  width: 350px;
-  height: fit-content;
-}
-
-h3 {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  color: white;
-  margin-bottom: 10px;
-}
-
-.ajout-player {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.select {
-  margin-inline-start: 145px;
-  background-color: rgb(163, 255, 127);
-  border: 4px solid rgb(163, 255, 127);
-  border-radius: 7px;
-  margin-bottom: 10px;
-  width: 70px;
-}
-
-video {
-  width: 100%;
-  margin-bottom: 50px;
-}
-
-.terrain-foot {
-  display: flex;
-  justify-content: space-around;
-}
-
-.j1,
-.j2,
-.j3,
-.j4,
-.j5,
-.j6,
-.j7,
-.j8,
-.j9,
-.j10,
-.j11 {
-  height: 50px;
-  width: 40px;
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
+.visible {
+  display: block !important;
 }

@@ -33,81 +33,85 @@
       <!--  -->
 
       <div class="terrain">
-        <div class="j1"></div>
-        <div class="j2"></div>
-        <div class="j3"></div>
-        <div class="j4"></div>
-        <div class="j5"></div>
-        <div class="j6"></div>
-        <div class="j7"></div>
-        <div class="j8"></div>
-        <div class="j9"></div>
-        <div class="j10"></div>
-        <div class="j11"></div>
+        <div class="cart-dans-terrain j1"></div>
+        <div class="cart-dans-terrain j2"></div>
+        <div class="cart-dans-terrain j3"></div>
+        <div class="cart-dans-terrain j4"></div>
+        <div class="cart-dans-terrain j5"></div>
+        <div class="cart-dans-terrain j6"></div>
+        <div class="cart-dans-terrain j7"></div>
+        <div class="cart-dans-terrain j8"></div>
+        <div class="cart-dans-terrain j9"></div>
+        <div class="cart-dans-terrain j10"></div>
+        <div class="cart-dans-terrain j11"></div>
       </div>
+
       <!--  -->
-      <div class="bg-add-player">
-        <form class="add-player">
-          <div class="formation">
-            <h3>Formation</h3>
-            <select class="select" name="choix" id="choix">
-              <option value="3-4-3">3-4-3</option>
-              <option value="4-3-3">4-3-3</option>
-            </select>
-          </div>
-          <div class="ajout-player">
-            <h3>Ajouter un joueur</h3>
-            <button class="add-i">
-              <i class="fa-solid fa-plus"></i>
-            </button>
-          </div>
-        </form>
-        <div class="bg-form">
-          <form class="ajout-de-footboleur">
-            <label class="ab" for="Name">Name:</label>
-            <input class="cadre" type="text" />
-
-            <label class="ab" for="img">Photo:</label>
-            <input class="cadre" type="url" />
-
-            <label class="ab" for="position">Position:</label>
-            <input class="cadre" type="text" />
-
-            <label class="ab" for="Nationality">Nationality:</label>
-            <input class="cadre" type="text" />
-
-            <label class="ab" for="flag">Flag:</label>
-            <input class="cadre" type="url" />
-
-            <label class="ab" for="club">Club:</label>
-            <input class="cadre" type="url" />
-
-            <label class="ab" for="logo">Logo:</label>
-            <input class="cadre" type="url" />
-
-            <label class="ab" for="rating">Rating:</label>
-            <input class="cadre" type="number" />
-
-            <label class="ab" for="pace">Pace:</label>
-            <input class="cadre" type="number" />
-
-            <label class="ab" for="shooting">Shooting:</label>
-            <input class="cadre" type="number" />
-
-            <label class="ab" for="passing">Passing:</label>
-            <input class="cadre" type="number" />
-
-            <label class="ab" for="dribbling">Dribbling:</label>
-            <input class="cadre" type="number" />
-
-            <label class="ab" for="defending">Defending:</label>
-            <input class="cadre" type="number" />
-
-            <label class="ab" for="physical">Physical:</label>
-            <input class="cadre" type="number" />
+      <div class="box">
+        <div class="bg-add-player">
+          <form class="add-player">
+            <div class="formation">
+              <h3>Formation</h3>
+              <select class="select" name="choix" id="choix">
+                <option value="3-4-3">3-4-3</option>
+                <option value="4-3-3">4-3-3</option>
+              </select>
+            </div>
+            <div class="ajout-player">
+              <h3>Ajouter un joueur</h3>
+              <button class="add-i">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
           </form>
-          <input class="button" type="submit" value="Add" />
+          <div class="bg-form">
+            <form class="ajout-de-footboleur">
+              <label class="ab" for="Name">Name:</label>
+              <input class="cadre" type="text" />
+
+              <label class="ab" for="img">Photo:</label>
+              <input class="cadre" type="url" />
+
+              <label class="ab" for="position">Position:</label>
+              <input class="cadre" type="text" />
+
+              <label class="ab" for="Nationality">Nationality:</label>
+              <input class="cadre" type="text" />
+
+              <label class="ab" for="flag">Flag:</label>
+              <input class="cadre" type="url" />
+
+              <label class="ab" for="club">Club:</label>
+              <input class="cadre" type="url" />
+
+              <label class="ab" for="logo">Logo:</label>
+              <input class="cadre" type="url" />
+
+              <label class="ab" for="rating">Rating:</label>
+              <input class="cadre" type="number" />
+
+              <label class="ab" for="pace">Pace:</label>
+              <input class="cadre" type="number" />
+
+              <label class="ab" for="shooting">Shooting:</label>
+              <input class="cadre" type="number" />
+
+              <label class="ab" for="passing">Passing:</label>
+              <input class="cadre" type="number" />
+
+              <label class="ab" for="dribbling">Dribbling:</label>
+              <input class="cadre" type="number" />
+
+              <label class="ab" for="defending">Defending:</label>
+              <input class="cadre" type="number" />
+
+              <label class="ab" for="physical">Physical:</label>
+              <input class="cadre" type="number" />
+            </form>
+            <input class="button" type="submit" value="Add" />
+          </div>
         </div>
+        <div class="rectangle"></div>
       </div>
     </div>
 
@@ -143,6 +147,8 @@
         </p>
       </div>
     </footer>
-    <script src="assets/js/script.js"></script>
+
+    <script type="module" src="assets/js/data.js"></script>
+    <script src="assets/js/script.js" type="module"></script>
   </body>
 </html>
