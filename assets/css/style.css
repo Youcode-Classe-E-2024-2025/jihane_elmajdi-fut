@@ -650,6 +650,7 @@ video {
 .image img {
   width: 50px;
 }
+/* js */
 .visible {
   display: block !important;
 }
