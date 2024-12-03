@@ -33,33 +33,48 @@
       <!--  -->
 
       <div class="terrain">
-        <div class="cart-dans-terrain j1"></div>
-        <div class="cart-dans-terrain j2"></div>
-        <div class="cart-dans-terrain j3"></div>
-        <div class="cart-dans-terrain j4"></div>
-        <div class="cart-dans-terrain j5"></div>
-        <div class="cart-dans-terrain j6"></div>
-        <div class="cart-dans-terrain j7"></div>
-        <div class="cart-dans-terrain j8"></div>
-        <div class="cart-dans-terrain j9"></div>
-        <div class="cart-dans-terrain j10"></div>
-        <div class="cart-dans-terrain j11"></div>
+        <div class="cart-dans-terrain j1">
+          <div class="remove"><i class="fa-solid fa-trash"></i></div>
+        </div>
+        <div class="cart-dans-terrain j2">
+          <div class="remove"><i class="fa-solid fa-trash"></i></div>
+        </div>
+        <div class="cart-dans-terrain j3">
+          <div class="remove"><i class="fa-solid fa-trash"></i></div>
+        </div>
+        <div class="cart-dans-terrain j4">
+          <div class="remove"><i class="fa-solid fa-trash"></i></div>
+        </div>
+        <div class="cart-dans-terrain j5">
+          <div class="remove"><i class="fa-solid fa-trash"></i></div>
+        </div>
+        <div class="cart-dans-terrain j6">
+          <div class="remove"><i class="fa-solid fa-trash"></i></div>
+        </div>
+        <div class="cart-dans-terrain j7">
+          <div class="remove"><i class="fa-solid fa-trash"></i></div>
+        </div>
+        <div class="cart-dans-terrain j8">
+          <div class="remove"><i class="fa-solid fa-trash"></i></div>
+        </div>
+        <div class="cart-dans-terrain j9">
+          <div class="remove"><i class="fa-solid fa-trash"></i></div>
+        </div>
+        <div class="cart-dans-terrain j10">
+          <div class="remove"><i class="fa-solid fa-trash"></i></div>
+        </div>
+        <div class="cart-dans-terrain j11">
+          <div class="remove"><i class="fa-solid fa-trash"></i></div>
+        </div>
       </div>
 
       <!--  -->
       <div class="box">
         <div class="bg-add-player">
           <form class="add-player">
-            <div class="formation">
-              <h3>Formation</h3>
-              <select class="select" name="choix" id="choix">
-                <option value="3-4-3">3-4-3</option>
-                <option value="4-3-3">4-3-3</option>
-              </select>
-            </div>
             <div class="ajout-player">
               <h3>Ajouter un joueur</h3>
-              <button class="add-i">
+              <button type="button" class="add-i">
                 <i class="fa-solid fa-plus"></i>
               </button>
             </div>
@@ -67,48 +82,48 @@
           <div class="bg-form">
             <form class="ajout-de-footboleur">
               <label class="ab" for="Name">Name:</label>
-              <input class="cadre" type="text" />
+              <input id="Name" class="cadre" type="text" />
 
               <label class="ab" for="img">Photo:</label>
-              <input class="cadre" type="url" />
+              <input id="img" class="cadre" type="url" />
 
               <label class="ab" for="position">Position:</label>
-              <input class="cadre" type="text" />
+              <input id="position" class="cadre" type="text" />
 
               <label class="ab" for="Nationality">Nationality:</label>
-              <input class="cadre" type="text" />
+              <input id="Nationality" class="cadre" type="text" />
 
               <label class="ab" for="flag">Flag:</label>
-              <input class="cadre" type="url" />
+              <input id="flag" class="cadre" type="url" />
 
               <label class="ab" for="club">Club:</label>
-              <input class="cadre" type="url" />
+              <input id="club" class="cadre" type="url" />
 
               <label class="ab" for="logo">Logo:</label>
-              <input class="cadre" type="url" />
+              <input id="logo" class="cadre" type="url" />
 
               <label class="ab" for="rating">Rating:</label>
-              <input class="cadre" type="number" />
+              <input id="rating" class="cadre" type="number" />
 
               <label class="ab" for="pace">Pace:</label>
-              <input class="cadre" type="number" />
+              <input id="pace" class="cadre" type="number" />
 
               <label class="ab" for="shooting">Shooting:</label>
-              <input class="cadre" type="number" />
+              <input id="shooting" class="cadre" type="number" />
 
               <label class="ab" for="passing">Passing:</label>
-              <input class="cadre" type="number" />
+              <input id="passing" class="cadre" type="number" />
 
               <label class="ab" for="dribbling">Dribbling:</label>
-              <input class="cadre" type="number" />
+              <input id="dribbling" class="cadre" type="number" />
 
               <label class="ab" for="defending">Defending:</label>
-              <input class="cadre" type="number" />
+              <input id="defending" class="cadre" type="number" />
 
               <label class="ab" for="physical">Physical:</label>
-              <input class="cadre" type="number" />
+              <input id="physical" class="cadre" type="number" />
             </form>
-            <input class="button" type="submit" value="Add" />
+            <input id="addplayer" class="button" type="submit" value="Add" />
           </div>
         </div>
         <div class="rectangle"></div>
@@ -147,7 +162,6 @@
         </p>
       </div>
     </footer>
-
     <script type="module" src="assets/js/data.js"></script>
     <script src="assets/js/script.js" type="module"></script>
   </body>
