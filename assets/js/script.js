@@ -151,10 +151,7 @@ removebtns.forEach((item) => {
     }
   });
 });
-// e.target;
-// e.preventDefault;
-// e.currentTarget;
-
+// mise en situation
 const objet1 = { name: "jihane", nationalite: "morocco", club: "khawla" };
 const objet2 = { name: "jihane1", nationalite: "morocco", club: "khawla1" };
 
@@ -168,3 +165,6 @@ function calcule() {
   }
   return moi;
 }
+
+const tablau = [1, 4, 8, 0];
+tablau.sort((a, b) => a - b);
