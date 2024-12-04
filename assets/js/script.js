@@ -3,15 +3,12 @@ import { data } from "./data.js";
 let dataPlayer = JSON.parse(localStorage.getItem("dataPlayer")) || data.players;
 localStorage.setItem("dataPlayer", JSON.stringify(dataPlayer));
 
-console.log(JSON.parse(localStorage.getItem("dataPlayer")));
-// Sélectionner le bouton et le formulaire
 let bouton = document.querySelector(".add-i");
 let formulaire = document.querySelector(".bg-form");
-// Ajouter un événement au clic sur le bouton
+
 bouton.addEventListener("click", function () {
   formulaire.classList.toggle("visible");
   document.querySelector(".rectangle").style.display = "none";
-  // formulaire.style = "display: block";
 });
 
 let cartsTerrain = document.querySelectorAll(".cart-dans-terrain");
@@ -42,37 +39,6 @@ function afficheData() {
 
 const players = localStorage.getItem("dataPlayer");
 let text = "";
-console.log("hhhh", players);
-
-//les deux formation//
-const formation = {
-  "3-4-3": [
-    { bottom: "180px", left: "285px" },
-    { top: "145px", left: "430px" },
-    { top: "145px", right: "430px" },
-    { bottom: "500px", left: "285px" },
-    { bottom: "500px", left: "110px" },
-    { bottom: "500px", left: "455px" },
-    { bottom: "410px", left: "288px" },
-    { bottom: "350px", left: "430px" },
-    { bottom: "350px", left: "140px" },
-    { bottom: "250px", left: "285px" },
-    { bottom: "70px", left: "285px" },
-  ],
-  "3-4-3": [
-    { bottom: "617px", left: "340px" },
-    { top: "145px", left: "480px" },
-    { top: "145px", right: "480px" },
-    { bottom: "500px", left: "285px" },
-    { bottom: "500px", left: "110px" },
-    { bottom: "500px", left: "455px" },
-    { bottom: "620px", left: "230px" },
-    { bottom: "350px", left: "430px" },
-    { bottom: "350px", left: "140px" },
-    { bottom: "250px", left: "288px" },
-    { top: "70px", left: "285px" },
-  ],
-};
 
 //drag & drop
 let element = null;
@@ -94,7 +60,6 @@ document.querySelectorAll(".cart-dans-terrain").forEach((item) => {
     e.preventDefault();
     if (element) {
       element.style.width = "100%";
-      console.log(e.currentTarget.children);
       if (e.currentTarget.children.length >= 2) {
         const player = e.currentTarget.children[1];
         const elm = document.createElement("div");
@@ -186,3 +151,20 @@ removebtns.forEach((item) => {
     }
   });
 });
+// e.target;
+// e.preventDefault;
+// e.currentTarget;
+
+const objet1 = { name: "jihane", nationalite: "morocco", club: "khawla" };
+const objet2 = { name: "jihane1", nationalite: "morocco", club: "khawla1" };
+
+function calcule() {
+  let moi = 0;
+  if (objet1.nationalite === objet2.nationalite) {
+    moi += 5;
+  }
+  if (objet1.club === objet2.club) {
+    moi += 2;
+  }
+  return moi;
+}
